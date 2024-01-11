@@ -71,3 +71,30 @@
 .icone_linkdin {
   padding-right: 7px;
 }
+#bouton {
+  color: white;
+  background-color: #a52a2a;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 15px;
+  border: 3px solid #fdc788;
+  text-decoration: none;
+  transition: 0.5s;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+#bouton:hover {
+  background-color: #fdc788;
+  border-color: #a52a2a;
+  transform: scale(1.15);
+}
+.non-decoration {
+  text-decoration: none;
+}
+a:visited {
+  color: #fdc788;
+}
+a {
+  color: #fdc788;
+}

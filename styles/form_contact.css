@@ -1,0 +1,9 @@
+#titre-header {
+  background-color: blueviolet;
+}
+#Titre {
+  text-align: center;
+}
+#BlocPrincipal {
+  display: flex;
+}

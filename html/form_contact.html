@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles/form_contact.css" />
+  </head>
+  <body>
+    <header>
+      <div id="conteneur-header" class="center flex">
+        <img
+          id="photo-portrait"
+          src="../images/portrait.png"
+          alt="Portrait de Théophile"
+        />
+
+        <div id="titre-header">
+          <p class="titre-entete">Théophile Bellintani</p>
+          <p>Développeur web</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 id="Titre">Formulaire de contact</h1>
+      <div id="BlocPrincipale">
+        <form id="formulaire" action="#" method="POST">
+          <!-- Nom prénom -->
+          <label for="Nom">Nom : </label>
+          <input
+            type="text"
+            id="Nom"
+            name="Nom"
+            class="form-text"
+            placeholder="Veuillez saisir votre nom"
+            required
+          />
+
+          <label for="Prenom">Prénom : </label>
+          <input
+            type="text"
+            id="Prenom"
+            name="Prenom"
+            class="form-text"
+            placeholder="Veuillez saisir votre prénom"
+            required
+          />
+          <!-- mail -->
+          <label for="Email">Email : </label>
+          <input
+            type="email"
+            placeholder="Veuillez saisir votre email"
+            id="Email"
+            name="Email"
+            class="form-text"
+            required
+          />
+          <!-- genre -->
+          <fieldset>
+            <select name="Genre" id="Genre">
+              <option value="">--Veuillez sélectionner votre genre--</option>
+              <option value="Homme">Homme</option>
+              <option value="Femme">Femme</option>
+              <option value="Autre">Ne pas préciser</option>
+            </select>
+          </fieldset>
+
+          <!-- raison de la prise de contact -->
+          <select name="RaisonPriseContact" id="RaisonPriseContact">
+            <option value="">
+              --Veuillez sélectionner la raison adéquat--
+            </option>
+            <option value="OffredEmploi">J'ai un travail pour vous !</option>
+            <option value="Formation">
+              Je voudrais vous proposer une formation
+            </option>
+            <option value="Renseignement">
+              Je souhaiterais un renseignement
+            </option>
+          </select>
+
+          <!-- Date pour un rendez-vous téléphonique -->
+          <fieldset>
+            <legend>Sélectionnez une date pour un RDV téléphonique</legend>
+            <label for="DateResa">Date du Rendez-vous : </label>
+            <input type="date" min="2024-01-20" id="DateResa" name="DateResa" />
+          </fieldset>
+          <!-- Message -->
+          <label for="Message">Votre Message : </label>
+          <textarea
+            name="Message"
+            id="Message"
+            cols="30"
+            rows="5"
+            placeholder="Veuillez nous laisser un message"
+            required
+            maxlength="500"
+          ></textarea>
+          <!-- Acceptation des CGU -->
+          <input type="checkbox" id="CGU" name="CGU" required />
+          <label for="CGU">J'accepte les <a href="CGU.html">CGU</a>.</label>
+
+          <input type="submit" value="Envoyer" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
