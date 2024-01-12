@@ -1,9 +1,67 @@
+@font-face {
+  font-family: ma-police;
+  src: url(../fonts/Comfortaa-Regular.ttf) format("truetype");
+}
+body * {
+  font-family: ma-police;
+  font-size: 10px;
+}
+
+/* Nom et photo */
 #titre-header {
   background-color: blueviolet;
 }
 #Titre {
   text-align: center;
 }
-#BlocPrincipal {
-  display: flex;
+
+/* Permet de centrer les élements */
+.Bloc_Center {
+  margin: 50px 30%;
+}
+
+/* Agit sur les inputs */
+input: (input[type= "checkbox"]) {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  box-shadow: 2px 2px 15px lightgray;
+  color: blue;
+  width: 35%;
+}
+input:focus {
+  border-color: purple;
+  outline: solid purple;
+}
+input [type="email"] {
+  width: 85%;
+}
+legend {
+  font-weight: 800;
+}
+fieldset {
+  margin: 15px;
+}
+fieldset:hover legend {
+  color: purple;
+}
+select {
+  width: 100%;
+  padding: 5px;
+  margin: 20px 0px;
+}
+
+fieldset {
+  border-bottom-style: solid;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+textarea {
+  width: 100%;
+  margin: 15px 0;
+}
+input [type="submit"] {
+  display: block;
+  margin: 20px auto !important;
+  margin-left: 140px;
 }
